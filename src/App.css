@@ -1,0 +1,168 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+.App {
+  text-align: center;
+}
+body{
+  background-color: #05292E;
+}
+
+.box {
+  position: relative;
+  background: white;
+  width: 100%;
+  height: 300px;  
+  
+}
+
+
+.box:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-90deg, #00fa2a 0%, #fffbfc00 100% );
+  transform: translate3d(0px, 20px, 0) scale(0.95);
+  filter: blur(30px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+.box::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+
+
+.box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header{
+  background-image: url(./public/Portal.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+ 
+}
+.input{
+  margin: 1rem;
+}
+.cardsheader{
+display: flex;
+justify-content: center;
+
+}
+.cardheader{
+ margin: 1rem;
+ background-color: #062226;
+ display: flex;
+}
+.title{
+  margin: 2rem 0rem 0rem 0rem;
+  color: white;
+}
+.cardheader p{
+  margin: 1rem;
+  color: white;
+}
+
+.cards{
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+   color: white;
+  background-color: #062226;
+  margin: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  max-height: 800px;
+}
+.card:hover{
+  box-shadow: 0px 0px 20px 10px #00fa2a;
+}
+.image{
+  max-width: 800px;
+}
+.colorGray{
+  color: gray;
+}
+.info{
+  padding: 1rem;
+  text-align: left;
+}
+.info p{
+  margin: 0;
+  padding: 0;
+}
+.space{
+  margin-bottom: 0.5rem;
+}
+
+.status{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  background-color: #062226;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.status p{
+  margin: 0 0;
+  padding-left: 0.2rem;
+}
+.statusc{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+
+.pages{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+.pages a{
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  padding: 1rem;
+  margin-right: 1rem;
+  color:#05292E;
+  font-style: oblique;
+  background-color: #00fa2a;
+  border-radius: 50%;  
+}
+
+.Footer{
+  padding: 1rem;
+ background-color: #062226;
+ color: white;
+}
