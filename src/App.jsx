@@ -51,8 +51,8 @@ function App() {
             <div className='header'>
               <div className='input'>
                 <h1 className='title'>Rick And Morty</h1>
-                <input type="text" value={searchLocation} onChange={e => setSearchLocation(e.target.value)} />
-                <button onClick={getLocation}>Show</button>
+                <input type="text" value={searchLocation} onChange={e => setSearchLocation(e.target.value)} placeholder="Location for ID" />
+                <button onClick={getLocation} >Search</button>
               </div>
             </div>
           </div>
